@@ -63,3 +63,12 @@ on(document,'#brief-form',form=>form.addEventListener('submit',async event=>{
  if(copied){const btn=form.querySelector('[type=submit]');if(btn)btn.textContent='✓ Бриф скопирован'}
 }));
 })();
+
+document.querySelectorAll('[data-team-left],[data-team-right]').forEach(button=>button.addEventListener('click',()=>{
+ const section=button.closest('section');
+ const track=section?.querySelector('.ref-team-track');
+ const item=track?.querySelector('.ref-person');
+ if(!track||!item)return;
+ const amount=item.getBoundingClientRect().width+16;
+ track.scrollBy({left:button.hasAttribute('data-team-right')?amount*1.1:-amount*1.1,behavior:'smooth'});
+}));
