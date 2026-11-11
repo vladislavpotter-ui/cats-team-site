@@ -1,31 +1,26 @@
-# Cats Team — website
+# Cats Team — premium website v4
 
-Статический сайт креативного агентства Cats Team. В основе — графитовый фон, лаймовый цвет `#dcff5a` и векторная эмблема из исходного бренд-пака.
+Website: https://vladislavpotter-ui.github.io/cats-team-site/
 
-## Страницы
-- `index.html` — главный экран, услуги, портфолио, процесс, тарифные форматы, FAQ, бриф.
-- `services.html` — 10 подробных направлений.
-- `cases.html` — фильтруемая галерея демонстрационных концепций.
-- `about.html` — философия и принципы работы.
-- `contacts.html` — форма подготовки брифа.
+## Updated
+- Hero, bento services and bento projects rebuilt following the user's black/lime approved reference.
+- Vector Cats Team wordmark inspired by the original supplied CT brand pack; original PNG/WEBP preserved in local assets bundle.
+- Home and About team carousels: eight profiles based on old project materials, with initials instead of unavailable employee photographs.
+- Cases page: ten projects from older Cats Team Railway archive, without inventing result metrics or media.
+- Interactive project filters, team controls, mobile navigation and copyable client brief.
 
-## Функции
-Карусель на главном экране, фильтры работ, FAQ-аккордеон, мобильное меню, копирование брифа в буфер обмена. Никаких сборщиков JavaScript не требуется — GitHub Pages достаточно.
+## Missing original PrivateLabel assets
+PrivateLabel.ru did not respond to accessible tools at the time of work. The old Railway seed includes an empty image field for every employee and every project. Exact team portraits, portfolio imagery, video and the original complete website backup cannot be recovered from those files alone.
 
-## Важно перед публичным запуском
-1. Добавить реальные разрешённые к публикации кейсы, фотографии и измеренные результаты. **Текущие карточки — демонстрационные визуальные концепции.**
-2. Согласовать официальный email, телефон, Telegram или CRM. Форма **не отправляет** персональные данные, а только копирует текст брифа; это осознанное ограничение до настройки обработчика.
-3. Главная использует удалённую фотографию кошки Pexels (Alexios Katsarakis): https://www.pexels.com/photo/portrait-of-a-black-cat-9304589/. Желательно хранить согласованный файл локально в репозитории.
-4. Проверить тексты на соответствие коммерческому предложению и исходному сайту PrivateLabel.
-5. Подключить аналитику и политику конфиденциальности при внедрении рабочих форм.
+## Archive contacts (must confirm)
+info@privatelabel.ru | +7 922 039 13 14 | @vladislav_privatelabel
 
-## Публикация
-В GitHub: Settings → Pages → Deploy from a branch → `main` → `/(root)`.
-Сайт: https://vladislavpotter-ui.github.io/cats-team-site/
+## Backups
+Branch before v4: backup-before-premium-rebuild-2026-11-12
 
-Резервная ветка до крупного редизайна: `backup-before-redesign-2026-11-12`.
-
-## Редактирование
-- Палитра, сетка, типографика: `css/styles.css`
-- Взаимодействия: `js/site.js`
-- Тексты, услуги и ссылки: соответствующие `.html` файлы.
+## Launch checklist
+1. Supply authentic employee portraits with permission to publish.
+2. Upload project photographs and videos from the Tilda/site owner source.
+3. Confirm contact details, consent/privacy wording and connect real CRM/form delivery.
+4. Replace remote hero photo with local brand-owned version.
+5. Run browser QA and mobile checks.
