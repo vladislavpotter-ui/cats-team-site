@@ -35,7 +35,7 @@ if(slides.length){
  hero?.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>70)update(active+(dx<0?1:-1))},{passive:true});
 }
 const filterButtons=[...document.querySelectorAll('.filter-btn[data-filter]')];
-const cards=[...document.querySelectorAll('.work-card[data-category]')];
+const cards=[...document.querySelectorAll('.work-card[data-category], .ref-archive-case[data-category]')];
 filterButtons.forEach(button=>button.addEventListener('click',()=>{
  const category=button.dataset.filter;
  filterButtons.forEach(b=>{const current=b===button;b.classList.toggle('active',current);b.setAttribute('aria-pressed',String(current))});
